@@ -1,0 +1,172 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>FORM Kerusakan dan  Perbaikan Mesin/Alat (KPA)</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li class="active">
+        <strong>FORM KPA</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2">
+  </div>
+</div>
+<div class="wrapper wrapper-content">
+  <form class="form-horizontal" action="http://localhost:7777/tis/#/kpa/perbaikan_alat_daftar_mp">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Data Header</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>No KPA</label></div>
+                  <div class="col-xs-8 text-left"><label class="label label-info">20170202.007</label></div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Type/Model</label></div>
+                  <div class="col-xs-8 text-left">Excavator / AF331</div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Serial Number</label></div>
+                  <div class="col-xs-8 text-left">AY-90092.12</div>
+                </div>
+              </div>
+
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Dibuat Oleh</label></div>
+                  <div class="col-xs-8 text-left">Elina S.T</div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Lokasi</label></div>
+                  <div class="col-xs-8 text-left">Jakarta</div>
+                </div>
+              </div>
+
+              <div class="col-md-4 b-r">
+
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Tanggal</label></div>
+                  <div class="col-xs-8 text-left">2017-02-02</div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Jam</label></div>
+                  <div class="col-xs-8 text-left">08.15</div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Data Penunjang</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-4 b-r">
+                <h3>Kerusakan</h3>
+                <div ng-model="demoModel">
+                  Data kerusakan
+                </div>
+              </div>
+              <div class="col-md-4 b-r">
+                <h3>Penyebab</h3>
+                <div ng-model="demoModel">
+                  Penyebab kerusakan pada alat
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h3>Tindakan</h3>
+                <div ng-model="demoModel">
+                  Tindakan yang akan dilakukan
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Maintenance & Planning</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <label class="col-md-3 control-label">No WO</label>
+                  <div class="col-md-9">
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type="text" readonly="" class="form-control" placeholder="WO.20170203.009" /> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 b-r">
+                <div class="form-group"><label class="col-md-3 control-label">Start Date</label>
+                  <div class="col-md-9">
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type="text" class="form-control" /> 
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group"><label class="col-md-3 control-label">Taget Date</label>
+                  <div class="col-md-9">
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type="text" class="form-control" /> 
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ibox-footer">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="col-md-offset-11 col-lg-1">
+                    <button class="btn btn-sm btn-primary" type="submit">Simpan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- Footer -->
+<div ng-include="'views/common/footer.html'"></div>

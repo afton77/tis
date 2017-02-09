@@ -1,0 +1,407 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>FORM Kerusakan dan  Perbaikan Mesin/Alat (KPA)</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li class="active">
+        <strong>FORM KPA</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2">
+  </div>
+</div>
+<div class="wrapper wrapper-content">
+  <form class="form-horizontal" action="http://localhost:7777/tis/#/kpa/perbaikan_alat_daftar_mp">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Data Header</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>No KPA</label></div>
+                  <div class="col-xs-8 text-left"><label class="label label-info">20170202.007</label></div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Type/Model</label></div>
+                  <div class="col-xs-8 text-left">Excavator / AF331</div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Serial Number</label></div>
+                  <div class="col-xs-8 text-left">AY-90092.12</div>
+                </div>
+              </div>
+
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Dibuat Oleh</label></div>
+                  <div class="col-xs-8 text-left">Elina S.T</div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Lokasi</label></div>
+                  <div class="col-xs-8 text-left">Jakarta</div>
+                </div>
+              </div>
+
+              <div class="col-md-4 b-r">
+
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Tanggal</label></div>
+                  <div class="col-xs-8 text-left">2017-02-02</div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Jam</label></div>
+                  <div class="col-xs-8 text-left">08.15</div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Data Penunjang</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-4 b-r">
+                <h3>Kerusakan</h3>
+                <div ng-model="demoModel">
+                  Data kerusakan
+                </div>
+              </div>
+              <div class="col-md-4 b-r">
+                <h3>Penyebab</h3>
+                <div ng-model="demoModel">
+                  Penyebab kerusakan pada alat
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h3>Tindakan</h3>
+                <div ng-model="demoModel">
+                  Tindakan yang akan dilakukan
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Maintenance & Planning</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>No WO.</label></div>
+                  <div class="col-xs-8 text-left"><label class="label label-info">WO.20170203.009</label></div>
+                </div>
+              </div>
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Start Date</label></div>
+                  <div class="col-xs-8 text-left">2017-02-03</div>
+
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <div class="col-xs-4 text-right"><label>Target Date</label></div>
+                  <div class="col-xs-8 text-left">2017-02-10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--          <div class="ibox-footer">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <div class="col-md-offset-11 col-lg-1">
+                              <button class="btn btn-sm btn-primary" type="submit">Simpan</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Maintenance Operation</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Actual Start Date</label>
+                  <div class="col-md-8">
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type="text" class="form-control" /> 
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 b-r">
+                <label class="col-md-4 control-label">Actual Finish Date</label>
+                <div class="col-md-8">
+                  <div class='input-group date' id='datetimepicker1'>
+                    <input type="text" class="form-control" /> 
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="col-md-4 control-label">Status</label>
+                <div class="col-md-8">
+                  <div class='input-group date' id='datetimepicker1'>
+                    <input type="text" class="form-control" /> 
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 b-r">
+                <div class="form-group">
+                  <label class="col-md-3 control-label">Actual Start Date</label>
+                  <div class="col-md-9">
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type="text" class="form-control" /> 
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 b-r">
+                <label class="col-md-3 control-label">Actual Finish Date</label>
+                <div class="col-md-9">
+                  <div class='input-group date' id='datetimepicker1'>
+                    <input type="text" class="form-control" /> 
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="col-md-3 control-label">Status</label>
+                <div class="col-md-9">
+                  <div class='input-group date' id='datetimepicker1'>
+                    <input type="text" class="form-control" /> 
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!--          <div class="ibox-footer">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <div class="col-md-offset-11 col-lg-1">
+                              <button class="btn btn-sm btn-primary" type="submit">Simpan</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>-->
+        </div>
+      </div>
+    </div>
+
+    <!--SPA-->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>SPA</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th rowspan="2">No</th>
+                    <th rowspan="2">Nama Barang</th>
+                    <th rowspan="2">Tugas yang dikerjakan</th>
+                    <th rowspan="2">Proyek</th>
+                    <th colspan="2" class="center">Jam Pekerjaan</th>
+                    <!--<th></th>-->
+                    <th rowspan="2">Total Lembur (Jam)</th>
+                    <th rowspan="2">Target Selesai</th>
+                    <th rowspan="2">Keterangan</th>
+                    <th rowspan="2">
+                      <label class="label">+</label><label class="label">-</label>
+                    </th>
+                  </tr>
+                  <tr>                    
+                    <th>Mulai</th>
+                    <th>Selesai</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Nama Barang" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Task" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Nama Proyek" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="2017-02-03" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="2017-02-10" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="0" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="2017-02-10" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="2017-02-10" />
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Nama Barang" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Task" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Nama Proyek" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="2017-02-03" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="2017-02-10" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="0" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="2017-02-10" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="2017-02-10" />
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th rowspan="2">No</th>
+                    <th rowspan="2">Nama Barang</th>
+                    <th rowspan="2">Tugas yang dikerjakan</th>
+                    <th rowspan="2">Proyek</th>
+                    <th colspan="2" class="center">Jam Pekerjaan</th>
+                    <!--<th></th>-->
+                    <th rowspan="2">Total Lembur (Jam)</th>
+                    <th rowspan="2">Target Selesai</th>
+                    <th rowspan="2">Keterangan</th>
+                    <th rowspan="2">+</th>
+                  </tr>
+                  <tr>                    
+                    <th>Mulai</th>
+                    <th>Selesai</th>
+                  </tr>
+                </tfoot>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>
+<!-- Footer -->
+<div ng-include="'views/common/footer.html'"></div>

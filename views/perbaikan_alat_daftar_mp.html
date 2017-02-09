@@ -1,0 +1,494 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Daftar KPA</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a>Tables</a>
+      </li>
+      <li class="active">
+        <strong>Daftar Maintenance Planner</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2">
+
+  </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="datatablesCtrl">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Daftar Maintenance Planner
+            <small>beserta statusnya</small>
+          </h5>
+          <div ibox-tools></div>
+        </div>
+        <div class="ibox-content">
+
+
+          <table datatable="" dt-options="dtOptions" class="table table-striped table-bordered table-hover dataTables-example">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Model</th>
+                <th>SN</th>
+                <th>No KPA</th>
+                <th>No WO</th>
+                <th>Plan Start</th>
+                <th>Plan Target</th>
+                <th>Lokasi</th>
+                <th>Status</th>
+                <th>Status Alat</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Excavator</td>
+                <td>AF331</td>
+                <td>SH00901</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-007</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.009</td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Jakarta</td>
+                <td><span class="label">New</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>JS32</td>
+                <td>SH00902</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-008</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.010</td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Bandung</td>
+                <td><span class="label label-primary">In Progress</span></td>
+                <td><span class="label label-warning">Down</span></td>
+
+                <td>    
+                  <div class="btn-group">
+                    <button class="btn-white btn btn-xs">View</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>AD40-1</td>
+                <td>SH00903</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-009</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">Buat WO</a></td>
+                <td>0000-00-00</td>
+                <td>0000-00-00</td>
+                <td>Cirebon</td>
+                <td><span class="label label-default">New</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>HJ98</td>
+                <td>SH00904</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-010</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.012</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Semarang</td>
+                <td><span class="label label-warning">To Do</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>AF331</td>
+                <td>SH00905</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-011</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.013</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Yogyakarta</td>
+                <td><span class="label label-inverse">Remove</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>JS32</td>
+                <td>SH00906</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-012</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.014</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Jakarta</td>
+                <td><span class="label">New</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>AD40-1</td>
+                <td>SH00907</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-013</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.015</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Bandung</td>
+                <td><span class="label label-primary">In Progress</span></td>
+                <td><span class="label label-warning">Down</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>HJ98</td>
+                <td>SH00908</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-014</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.016</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Cirebon</td>
+                <td><span class="label label-success">Done</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>AF331</td>
+                <td>SH00909</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-015</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.017</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Semarang</td>
+                <td><span class="label label-warning">To Do</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>JS32</td>
+                <td>SH00910</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-016</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.018</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Yogyakarta</td>
+                <td><span class="label label-inverse">Remove</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>AD40-1</td>
+                <td>SH00911</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-017</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.019</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Jakarta</td>
+                <td><span class="label">New</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>HJ98</td>
+                <td>SH00912</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-018</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.020</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Bandung</td>
+                <td><span class="label label-primary">In Progress</span></td>
+                <td><span class="label label-warning">Down</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>AF331</td>
+                <td>SH00913</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-019</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.021</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Cirebon</td>
+                <td><span class="label label-success">Done</span></td>
+                <td><span class="label label-info">Active</span></td>
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>JS32</td>
+                <td>SH00914</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-020</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.022</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Semarang</td>
+                <td><span class="label label-warning">To Do</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>AD40-1</td>
+                <td>SH00915</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-021</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.023</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Yogyakarta</td>
+                <td><span class="label label-inverse">Remove</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>HJ98</td>
+                <td>SH00901</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-022</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.024</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Jakarta</td>
+                <td><span class="label">New</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>AF331</td>
+                <td>SH00902</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-023</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.025</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Bandung</td>
+                <td><span class="label label-primary">In Progress</span></td>
+                <td><span class="label label-warning">Down</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>JS32</td>
+                <td>SH00903</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-024</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.026</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-08</td>
+                <td>Cirebon</td>
+                <td><span class="label label-success">Done</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>AD40-1</td>
+                <td>SH00904</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-025</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.027</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Semarang</td>
+                <td><span class="label label-warning">To Do</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>HJ98</td>
+                <td>SH00905</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-026</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.028</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Yogyakarta</td>
+                <td><span class="label label-inverse">Remove</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>AF331</td>
+                <td>SH00906</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-027</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.029</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Jakarta</td>
+                <td><span class="label">New</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>JS32</td>
+                <td>SH00907</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-028</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.030</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Bandung</td>
+                <td><span class="label label-primary">In Progress</span></td>
+                <td><span class="label label-warning">Down</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>AD40-1</td>
+                <td>SH00908</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-029</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.031</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Cirebon</td>
+                <td><span class="label label-success">Done</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>HJ98</td>
+                <td>SH00909</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-030</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.032</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Jakarta</td>
+                <td><span class="label label-warning">To Do</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>AF331</td>
+                <td>SH00910</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-031</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.033</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Bandung</td>
+                <td><span class="label label-inverse">Remove</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Excavator</td>
+                <td>JS32</td>
+                <td>SH00911</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-032</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.034</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Cirebon</td>
+                <td><span class="label">New</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Forklift</td>
+                <td>AD40-1</td>
+                <td>SH00912</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-033</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.035</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Semarang</td>
+                <td><span class="label label-primary">In Progress</span></td>
+                <td><span class="label label-warning">Down</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+              <tr>
+                <td>Crane</td>
+                <td>HJ98</td>
+                <td>SH00913</td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat">20170202-034</a></td>
+                <td><a class="label label-default" href="#/kpa/perbaikan_alat_planner">WO.20170203.036</a></td>
+                <td>2017-02-03</td>
+                <td>2017-02-10</td>
+                <td>Yogyakarta</td>
+                <td><span class="label label-success">Done</span></td>
+                <td><span class="label label-info">Active</span></td>
+
+                <td><div class="btn-group"><button class="btn-white btn btn-xs">View</button></div></td>
+
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Type</th>
+                <th>Model</th>
+                <th>SN</th>
+                <th>No KPA</th>
+                <th>No WO</th>
+                <th>Tanggal</th>
+                <th>Waktu</th>
+                <th>Lokasi</th>
+                <th>Status</th>
+                <th>Status Alat</th>
+                <th>Detail</th>
+              </tr>
+            </tfoot>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
