@@ -419,6 +419,31 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
         }
       }
     })
+    .state('kpa.perbaikan_alat_daftar_mo', {
+      url: "/perbaikan_alat_daftar_mo",
+      templateUrl: "views/perbaikan_alat_daftar_mo.html",
+      data: {pageTitle: 'Daftar Maintenance Operation'},
+      resolve: {
+        loadPlugin: function ($ocLazyLoad) {
+          return $ocLazyLoad.load([
+            {
+              serie: true,
+              files: ['js/plugins/dataTables/datatables.min.js', 'css/plugins/dataTables/datatables.min.css']
+            },
+            {
+              serie: true,
+              name: 'datatables',
+              files: ['js/plugins/dataTables/angular-datatables.min.js']
+            },
+            {
+              serie: true,
+              name: 'datatables.buttons',
+              files: ['js/plugins/dataTables/angular-datatables.buttons.min.js']
+            }
+          ]);
+        }
+      }
+    })
     .state('mailbox', {
       abstract: true,
       url: "/mailbox",

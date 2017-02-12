@@ -14,7 +14,7 @@
   </div>
 </div>
 <div class="wrapper wrapper-content">
-  <form class="form-horizontal" action="http://localhost:7777/tis/#/kpa/perbaikan_alat_daftar_mp">
+  <form class="form-horizontal" action="#/kpa/perbaikan_alat_daftar_mp">
     <div class="row">
       <div class="col-lg-12">
         <div class="ibox float-e-margins">
@@ -151,7 +151,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="row">
       <div class="col-lg-12">
         <div class="ibox float-e-margins">
@@ -163,8 +163,8 @@
             <div class="row">
               <div class="col-md-4 b-r">
                 <div class="form-group">
-                  <label class="col-md-4 control-label">Actual Start Date</label>
-                  <div class="col-md-8">
+                  <label class="col-md-5 control-label">Actual Start Date</label>
+                  <div class="col-md-7">
                     <div class='input-group date' id='datetimepicker1'>
                       <input type="text" class="form-control" /> 
                       <span class="input-group-addon">
@@ -175,8 +175,8 @@
                 </div>
               </div>
               <div class="col-md-4 b-r">
-                <label class="col-md-4 control-label">Actual Finish Date</label>
-                <div class="col-md-8">
+                <label class="col-md-5 control-label">Actual Finish Date</label>
+                <div class="col-md-7">
                   <div class='input-group date' id='datetimepicker1'>
                     <input type="text" class="form-control" /> 
                     <span class="input-group-addon">
@@ -186,69 +186,20 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <label class="col-md-4 control-label">Status</label>
-                <div class="col-md-8">
-                  <div class='input-group date' id='datetimepicker1'>
-                    <input type="text" class="form-control" /> 
-                    <span class="input-group-addon">
-                      <span class="glyphicon glyphicon-time"></span>
-                    </span>
-                  </div>
+                <label class="col-md-5 control-label">Status</label>
+                <div class="col-md-7">
+                  <select class="form-control m-b" name="model">
+                    <option>-Pilih model-</option>
+                    <option>New</option>
+                    <option>To Do</option>
+                    <option>In Progress</option>
+                    <option>Done</option>
+                    <option>Remove</option>
+                  </select>
                 </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-md-4 b-r">
-                <div class="form-group">
-                  <label class="col-md-3 control-label">Actual Start Date</label>
-                  <div class="col-md-9">
-                    <div class='input-group date' id='datetimepicker1'>
-                      <input type="text" class="form-control" /> 
-                      <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 b-r">
-                <label class="col-md-3 control-label">Actual Finish Date</label>
-                <div class="col-md-9">
-                  <div class='input-group date' id='datetimepicker1'>
-                    <input type="text" class="form-control" /> 
-                    <span class="input-group-addon">
-                      <span class="glyphicon glyphicon-time"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <label class="col-md-3 control-label">Status</label>
-                <div class="col-md-9">
-                  <div class='input-group date' id='datetimepicker1'>
-                    <input type="text" class="form-control" /> 
-                    <span class="input-group-addon">
-                      <span class="glyphicon glyphicon-time"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
           </div>
-          <!--          <div class="ibox-footer">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <div class="col-md-offset-11 col-lg-1">
-                              <button class="btn btn-sm btn-primary" type="submit">Simpan</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>-->
         </div>
       </div>
     </div>
@@ -263,26 +214,25 @@
           </div>
           <div class="ibox-content">
             <div class="row">
-
               <table class="table">
                 <thead>
                   <tr>
-                    <th rowspan="2">No</th>
-                    <th rowspan="2">Nama Barang</th>
-                    <th rowspan="2">Tugas yang dikerjakan</th>
-                    <th rowspan="2">Proyek</th>
-                    <th colspan="2" class="center">Jam Pekerjaan</th>
+                    <th rowspan="2"><small>No</small></th>
+                    <th rowspan="2"><small>Nama Barang</small></th>
+                    <th rowspan="2"><small>Tugas</small></th>
+                    <th rowspan="2"><small>Proyek</small></th>
+                    <th colspan="2" class="center"><small>Jam Pekerjaan</small></th>
                     <!--<th></th>-->
-                    <th rowspan="2">Total Lembur (Jam)</th>
-                    <th rowspan="2">Target Selesai</th>
-                    <th rowspan="2">Keterangan</th>
+                    <th rowspan="2"><small>Lembur (Jam)</small></th>
+                    <th rowspan="2"><small>Target Selesai</small></th>
+                    <th rowspan="2"><small>Keterangan</small></th>
                     <th rowspan="2">
                       <label class="label">+</label><label class="label">-</label>
                     </th>
                   </tr>
                   <tr>                    
-                    <th>Mulai</th>
-                    <th>Selesai</th>
+                    <th><small>Mulai</small></th>
+                    <th><small>Selesai</small></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -325,7 +275,7 @@
                     </td>
                     <td>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="" placeholder="2017-02-10" />
+                        <input type="text" class="form-control" id="" placeholder="Keterangan" />
                       </div>
                     </td>
                     <td></td>
@@ -369,7 +319,7 @@
                     </td>
                     <td>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="" placeholder="2017-02-10" />
+                        <input type="text" class="form-control" id="" placeholder="Keterangan" />
                       </div>
                     </td>
                     <td></td>
@@ -377,24 +327,80 @@
                 </tbody>
                 <tfoot>
                   <tr>
-                    <th rowspan="2">No</th>
-                    <th rowspan="2">Nama Barang</th>
-                    <th rowspan="2">Tugas yang dikerjakan</th>
-                    <th rowspan="2">Proyek</th>
-                    <th colspan="2" class="center">Jam Pekerjaan</th>
+                    <th rowspan="2"><small>No</small></th>
+                    <th rowspan="2"><small>Nama Barang</small></th>
+                    <th rowspan="2"><small>Tugas</small></th>
+                    <th rowspan="2"><small>Proyek</small></th>
+                    <th colspan="2" class="center"><small>Jam Pekerjaan</small></th>
                     <!--<th></th>-->
-                    <th rowspan="2">Total Lembur (Jam)</th>
-                    <th rowspan="2">Target Selesai</th>
-                    <th rowspan="2">Keterangan</th>
+                    <th rowspan="2"><small>Lembur (Jam)</small></th>
+                    <th rowspan="2"><small>Target Selesai</small></th>
+                    <th rowspan="2"><small>Keterangan</small></th>
                     <th rowspan="2">+</th>
                   </tr>
                   <tr>                    
-                    <th>Mulai</th>
-                    <th>Selesai</th>
+                    <th><small>Mulai</small></th>
+                    <th><small>Selesai</small></th>
                   </tr>
                 </tfoot>
               </table>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Mekanik-->
+    
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Alokasi Mekanik</h5>
+            <div ibox-tools></div>
+          </div>
+          <div class="ibox-content">
+            <div class="row">
+              <div class="col-md-4">
+                <label class="col-md-5 control-label">Nama Mekanik I</label>
+                <div class="col-md-7">
+                  <select class="form-control m-b" name="model">
+                    <option>-Pilih mekanik-</option>
+                    <option>Bambang</option>
+                    <option>Donnie</option>
+                    <option>Erland</option>
+                    <option>Fiona</option>
+                    <option>Hendy</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="col-md-5 control-label">Nama Mekanik II</label>
+                <div class="col-md-7">
+                  <select class="form-control m-b" name="model">
+                    <option>-Pilih mekanik-</option>
+                    <option>Bambang</option>
+                    <option>Donnie</option>
+                    <option>Erland</option>
+                    <option>Fiona</option>
+                    <option>Hendy</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="col-md-5 control-label">Nama Mekanik III</label>
+                <div class="col-md-7">
+                  <select class="form-control m-b" name="model">
+                    <option>-Pilih mekanik-</option>
+                    <option>Bambang</option>
+                    <option>Donnie</option>
+                    <option>Erland</option>
+                    <option>Fiona</option>
+                    <option>Hendy</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
         </div>
